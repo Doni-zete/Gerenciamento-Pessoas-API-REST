@@ -1,4 +1,4 @@
-package one.ditalinnovation.personapi.enums;
+package one.digitalinnovation.personapi.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,5 +12,4 @@ public enum PhoneType {
     COMMERCIAL("Commercial");
 
     private final String description;
-
 }

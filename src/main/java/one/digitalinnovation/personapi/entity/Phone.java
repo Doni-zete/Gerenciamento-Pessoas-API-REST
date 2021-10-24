@@ -1,11 +1,10 @@
-package one.ditalinnovation.personapi.entity;
-
+package one.digitalinnovation.personapi.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import one.ditalinnovation.personapi.enums.PhoneType;
+import one.digitalinnovation.personapi.enums.PhoneType;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,11 +14,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 public class Phone {
 
     @Id
@@ -32,5 +31,6 @@ public class Phone {
 
     @Column(nullable = false)
     private String number;
+
 
 }
